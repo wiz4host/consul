@@ -1,0 +1,14 @@
+
+{
+    "bootstrap" : true,
+    "server" : true,
+    "datacenter": "dc1",
+    "data_dir" : "/var/consul",
+    "encrypt" : "<20_Char_Random_KEY_which_Should_BE_SAME_everywhere_in_Cluster>",
+    "log_level" : "INFO",
+    "enable_syslog" : true,
+    "addresses" : {
+        "http" : "0.0.0.0"
+    },
+    "ui" : true
+}

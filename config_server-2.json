@@ -1,0 +1,16 @@
+
+{
+    "bootstrap" : false,
+    "server" : true,
+    "datacenter": "dc1",
+    "data_dir" : "/var/consul",
+    "encrypt" : "<20_Char_Random_KEY_which_Should_BE_SAME_everywhere_in_Cluster>",
+    "log_level" : "INFO",
+    "enable_syslog" : true,
+    "bind-addr" : "<KEEP_SAME_NETWORK_IP_LYING_IN_BOOTSTRAP_NETWORK>",
+    "addresses" : {
+        "http" : "0.0.0.0"
+    },
+    "start_join" : ["<Consul_bootstrap_server_IP>, <SERVER-3_IP>, .."],
+    "ui" : true
+}
