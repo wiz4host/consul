@@ -1,0 +1,22 @@
+{
+    "bootstrap": false,
+    "server": true,
+    "datacenter": "dc1",
+    "data_dir": "/var/consul",
+    "encrypt": "7OyiFYvsoQbafkH/wcq+9w==",
+    "log_level": "DEBUG",
+    "enable_syslog": true,
+    "bind_addr" : "10.0.0.30",
+    "addresses" : {
+        "http" : "0.0.0.0"
+    },
+    "ui"  : true,
+    "start_join": ["10.0.0.10"],
+
+
+
+    "acl_datacenter": "dc1",
+    "acl_master_token": "9edadb0b-e54e-4e50-96ae-32842b78c839",
+    "acl_default_policy": "deny",
+    "acl_down_policy": "extend-cache"
+}
