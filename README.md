@@ -31,6 +31,9 @@ What change we need to do before run in config.json?
 
 
 How to run?
+ - Switch user to consul:
+     su consul
+
  - Start the cluster by running  bootstrap configuration (bootstrap= true, server = true, client = false)from one of your machine:
      consul agent -config-dir=/etc/consul/consul.d/bootstrap
   Thsi will be triggered only once on one of the server machine (which you choosen for server agent).
